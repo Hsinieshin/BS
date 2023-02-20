@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sandfly.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="sandfly.html"><img src="https://picsum.photos/id/684/60/40" alt=""></a>
+        <nav>
+            <a href="#">Menu</a>
+            <a href="#openhour">Open Hour</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="banner">
+        <div class="wrap">
+            <div class="banner-content">
+                <h1>Welcome to Sandfly Cafe</h1>
+                <p>The heart of Te Aanu</p>
+                <div class="button-wrap">
+                    <button>Menu</button>
+                    <button class="open-button">Reservation</button>
+                    <dialog class="modal" >
+                        <h2>sorry</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquid similique eveniet quod sunt? Laboriosam voluptates obcaecati odio id officia.</p>
+                        <button class="close-button">close</button>
+                       </dialog>
+                </div>
+    
+                <script>
+                    const modal = document.querySelector('.modal');
+                    const openmodal = document.querySelector('.open-button');
+                    const closemodal = document.querySelector('.close-button');
+
+                    openmodal.addEventListener('click',()=>{
+                         modal.showModal();
+                    })
+                    closemodal.addEventListener('click',()=>{
+                         modal.close();
+                    })
+                 </script>   
+            </div>
+            
+        </div>
+    </div>
+    <div class="openhour" id="openhour">
+        <div class="wrap">
+            <div class="item left-side">
+                <h2>Open Hour</h2>
+            </div>
+            <div class="item right-side">
+                <p>7am - 4:30pm<br>Everyday but Xmas and boxing day</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contact" id="contact">
+            <h2>Sandfle Cafe</h2>
+            <div class="wrap">
+                <div class="item address">
+                    <h3>Find Us</h3>
+                    <div class="contact-content">
+                        <address><a href="https://goo.gl/maps/mEfw5jCvjkYwRb8N9">9 The Lane, Te Anau 9600</a></address>
+                    </div>
+                    <div class="social-media">
+                            <a href="#" target="_blank" title="facebook"><img src="https://picsum.photos/id/40/40/40" alt=""></a>
+                            <a href="#" target="_blank" title="tripadvisor"><img src="https://picsum.photos/id/20/40/40" alt=""></a>
+                    </div>
+                    
+                </div>
+                <div class="item phone">
+                <h3>Contact</h3>
+                    <div class="contact-content">
+                        <p><a href="tel:032499529" title="call us">03 249 9529</a></p>
+                        <p><a href="mailto" title="mail us">sandflycafe@gmai.com</a></p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
